@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  background: radial-gradient(circle at 50% 90%, #ff8888 10%, #626dec 100%);
+}
+
+.container {
+  width: 375px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 9px;
+  box-shadow: 1px 4px 24px rgba(0, 0, 0, 0.5);
+}
+.container .box {
+  min-height: 420px;
+  width: 375px;
+  padding: 50px;
+}
+.container .box .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin: 35px auto;
+}
+.container .box .text {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 30px auto;
+}
+.container .box .more {
+  font-family: "Lexend Deca", sans-serif;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding: 11px 17px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.container .box .more:hover {
+  background: transparent;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.container .sedan {
+  background: #e38826;
+}
+.container .sedan .more {
+  color: #e38826;
+}
+.container .suv {
+  background: #006970;
+}
+.container .suv .more {
+  color: #006970;
+}
+.container .luxury {
+  background: #004241;
+}
+.container .luxury .more {
+  color: #004241;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    min-width: calc(256px * 3);
+    width: 100%;
+    max-width: calc(325px * 3);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+.attribution {
+  position: fixed;
+  background: #004241;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.attribution a {
+  color: #f2f2f2;
+}
+.attribution a:hover {
+  color: #e38826;
+}
+
+/*# sourceMappingURL=stilo.css.map */
